@@ -383,9 +383,28 @@ ul {
   gap: 0.8rem;
   font-size: 0.85rem;
   color: var(--accent-2);
-  font-family: monospace;
+  font-family: var(--font-main);
+  font-weight: 500;
+  margin-top: auto;
 }
 
+.project-tech li {
+  background: rgba(99, 102, 241, 0.08);
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.project-tech li:hover {
+  background: rgba(99, 102, 241, 0.15);
+  border-color: var(--accent-1);
+  transform: translateY(-2px);
+  color: var(--text-primary);
+}
 /* ===== SKILLS ===== */
 .skills-container {
   display: grid;
